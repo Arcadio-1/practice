@@ -4,15 +4,71 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
+    <link rel="stylesheet" href="./main.css" />
+    <script src="./app.js" defer></script>
+    <title>OOP practic</title>
   </head>
   <body>
-    <nav>
-      <ul>
-        <li>Home</li>
-        <li>categoris</li>
-        <li>contact us</li>
-      </ul>
-    </nav>
+    <template id="tooltip-id">
+      <h3>More Info</h3>
+      <p></p>
+    </template>
+    <nav><h1>Project Planner</h1></nav>
+    <div class="container">
+      <section class="active-sec" id="act-id">
+        <header>
+          <h2>Active Projects</h2>
+        </header>
+        <ul class="active active-ul">
+          <li
+            id="p1"
+            class="active-art"
+            data-extra-info="Got lifetime access, but would be nice to finish it soon!"
+          >
+            <h2>Finish the Course</h2>
+            <p>Finish the course within the next two weeks.</p>
+            <div>
+              <button id="more-info-btn">More Info</button>
+              <button id="finish-btn">Finish</button>
+            </div>
+          </li>
+          <li
+            id="p2"
+            class="active-art"
+            data-extra-info="Not really a business topic but still important."
+          >
+            <h2>Buy Groceries</h2>
+            <p>Don't forget to pick up groceries today.</p>
+            <div>
+              <button id="more-info-btn">More Info</button>
+              <button id="finish-btn">Finish</button>
+            </div>
+          </li>
+        </ul>
+      </section>
+      <section class="finish-sec" id="fnsh-id">
+        <header>
+          <h2>Finished Projects</h2>
+        </header>
+        <ul class="active finish-ul">
+          <li
+            id="p3"
+            class="finished-art"
+            data-extra-info="Super important conference! Fictional but still!"
+          >
+            <h2>Book Hotel</h2>
+            <p>
+              Academind conference takes place in December, don't forget to book
+              a hotel.
+            </p>
+            <div>
+              <button id="more-info-btn">More Info</button>
+              <button id="finish-btn">Activate</button>
+            </div>
+          </li>
+        </ul>
+      </section>
+      <button id="show-script">Stop new script</button>
+    </div>
   </body>
 </html>
